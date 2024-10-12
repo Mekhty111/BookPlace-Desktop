@@ -1,8 +1,8 @@
 import tkinter as tk
 from tkinter import ttk
 import mysql.connector
-from PIL import Image, ImageTk
-from tkcalendar import *
+from PIL import Image, ImageTk   
+from tkcalendar import Calendar
 import customtkinter as ct
 import random
 from PIL import ImageFont
@@ -77,6 +77,7 @@ apart_ti ={}
 car_ti = {}
 
 app.geometry("1300x800")
+
 avia_pressed= False
 bpr = False
 go_sck = 0
@@ -580,7 +581,7 @@ def hotel_butt():
                     button121 = ct.CTkButton(image_frame, image=icon_image12, text="",bg_color="white",hover_color="white", fg_color="white")
                     inner_grid_frame = ct.CTkFrame(hotel_ticket_frame, fg_color="white", bg_color="white")
                     price_label1 = ct.CTkLabel(inner_grid_frame, text=f"{price_calc} ₼", text_color="black", font=("Helvetica", 18))
-                    hotel_info = ct.CTkLabel(inner_grid_frame, text=f' {row[2]}  {row[4]*'★'}{(5-row[4])*'☆'}', text_color="black", font=("Helvetica", 18))
+                    hotel_info = ct.CTkLabel(inner_grid_frame, text=f' {row[2]}  {row[4]*"★"}{(5-row[4])*"☆"}', text_color="black", font=("Helvetica", 18))
 
 
                     hotel_ticket_inner_frame.pack()
@@ -620,7 +621,7 @@ def hotel_butt():
                 n = 5
                 price_label1 = ct.CTkLabel(inner_grid_frame, text=f"{price_calc} ₼", text_color="black",
                                            font=("Helvetica", 18))
-                hotel_info = ct.CTkLabel(inner_grid_frame, text=f' {abc[0][2]}  {abc[0][4] * '★'}{(5 - abc[0][4]) * '☆'}',
+                hotel_info = ct.CTkLabel(inner_grid_frame, text=f' {abc[0][2]}  {abc[0][4] * "★"}{(5 - abc[0][4]) * "☆"}',
                                          text_color="black", font=("Helvetica", 18))
 
                 hotel_ticket_inner_frame.pack()
@@ -791,7 +792,7 @@ def apart_butt():
                     button121 = ct.CTkButton(image_frame, image=icon_image12, text="",bg_color="white",hover_color="white", fg_color="white")
                     inner_grid_frame = ct.CTkFrame(hotel_ticket_frame, fg_color="white", bg_color="white")
                     price_label1 = ct.CTkLabel(inner_grid_frame, text=f"{price_calc} ₼", text_color="black", font=("Helvetica", 18))
-                    hotel_info = ct.CTkLabel(inner_grid_frame, text=f' {row[2]}  {row[4]*'★'}{(5-row[4])*'☆'}', text_color="black", font=("Helvetica", 18))
+                    hotel_info = ct.CTkLabel(inner_grid_frame, text=f' {row[2]}  {row[4]*"★"}{(5-row[4])*"☆"}', text_color="black", font=("Helvetica", 18))
 
 
                     hotel_ticket_inner_frame.pack()
@@ -831,7 +832,7 @@ def apart_butt():
                 n = 5
                 price_label1 = ct.CTkLabel(inner_grid_frame, text=f"{price_calc} ₼", text_color="black",
                                            font=("Helvetica", 18))
-                hotel_info = ct.CTkLabel(inner_grid_frame, text=f' {abc[0][2]}  {abc[0][4] * '★'}{(5 - abc[0][4]) * '☆'}',
+                hotel_info = ct.CTkLabel(inner_grid_frame, text=f' {abc[0][2]}  {abc[0][4] * "★"}{(5 - abc[0][4]) * "☆"}',
                                          text_color="black", font=("Helvetica", 18))
 
                 hotel_ticket_inner_frame.pack()
