@@ -25,41 +25,24 @@
 - **Datetime** and **random** — for date parsing and randomization of prices
 
 ---
-
 ## 📂 Project Structure
-
+```
 ├── MainApp.py # Main application source code
-
 ├── Untitled.sql # SQL schema/dump for MySQL database
-
 ├── apartments.csv # Apartment rental data source
-
 ├── aviatickets.csv # Flights data source
-
 ├── carsharing.csv # Car rental data source
-
 ├── hotels.csv # Hotels data source
-
-├── /Calendar_icons # Calendar-related icons/images
-
-├── /Cars # Car images/assets
-
-├── /Fonts # Custom fonts used in the app
-
-├── /Hotels_pics # Hotel images
-
-├── /bakcground_img # Background images
-
-├── /icons # General app icons
-
+├── Calendar_icons/ # Calendar-related icons/images
+├── Cars/ # Car images/assets
+├── Fonts/ # Custom fonts used in the app
+├── Hotels_pics/ # Hotel images
+├── bakcground_img/ # Background images
+├── icons/ # General app icons
 ├── .idea/ # IDE/project config files
-
 └── .DS_Store # macOS system file
-
-text
-
+```
 ---
-
 ## 🚀 Installation & Setup
 
 1. **Clone the repository:**
