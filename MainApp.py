@@ -7,7 +7,11 @@ import customtkinter as ct
 import random
 from PIL import ImageFont
 from datetime import datetime
+import os
 
+# Load environment variables from .env file
+from dotenv import load_dotenv
+load_dotenv()
 
 countries_dict = {
     'Baku': 'Баку',
@@ -197,9 +201,9 @@ def open_calendar_2(event, label2):
 
 def sql_conn(querry):
     mydb = mysql.connector.connect(
-        host="localhost",
-        user="root",
-        password="09070500",
+        host=os.environ.get("DB_HOST"),
+        user=os.environ.get("DB_USER"),
+        password=os.environ.get("DB_PASSWORD"),
         database="travelDB"
     )
 
@@ -302,11 +306,11 @@ def avia_butt():
                                      text_color="black")
             if not avia_to_entry.get():
                 querry2 = "SELECT * FROM aviatickets WHERE travel_date >= DATE_SUB(CURDATE(), INTERVAL 2 DAY) AND travel_date < CURDATE() + INTERVAL 1 DAY;"
-                mydb = mysql.connector.connect(
-                    host="localhost",
-                    user="root",
-                    password="09070500",
-                    database="travelDB")
+                mydb = mydb = mysql.connector.connect(
+            host=os.environ.get("DB_HOST"),
+        user=os.environ.get("DB_USER"),
+        password=os.environ.get("DB_PASSWORD"),
+        database="travelDB")
                 mycursor = mydb.cursor()
 
                 # выбирает дату из базы
@@ -552,11 +556,11 @@ def hotel_butt():
                                      text_color="black")
             if not country_hotel_entry.get():
                 querry2 = "SELECT * FROM hotels WHERE stay_date >= DATE_SUB(CURDATE(), INTERVAL 4 DAY) AND stay_date < CURDATE() + INTERVAL 3 DAY;"
-                mydb = mysql.connector.connect(
-                    host="localhost",
-                    user="root",
-                    password="09070500",
-                    database="travelDB")
+                mydb = mydb = mysql.connector.connect(
+        host=os.environ.get("DB_HOST"),
+        user=os.environ.get("DB_USER"),
+        password=os.environ.get("DB_PASSWORD"),
+        database="travelDB")
                 mycursor = mydb.cursor()
 
                 # выбирает дату из базы
@@ -763,11 +767,11 @@ def apart_butt():
                                      text_color="black")
             if not country_hotel_entry.get():
                 querry2 = "SELECT * FROM hotels WHERE stay_date >= DATE_SUB(CURDATE(), INTERVAL 4 DAY) AND stay_date < CURDATE() + INTERVAL 3 DAY;"
-                mydb = mysql.connector.connect(
-                    host="localhost",
-                    user="root",
-                    password="09070500",
-                    database="travelDB")
+                mydb = mydb = mysql.connector.connect(
+        host=os.environ.get("DB_HOST"),
+        user=os.environ.get("DB_USER"),
+        password=os.environ.get("DB_PASSWORD"),
+        database="travelDB")
                 mycursor = mydb.cursor()
 
                 # выбирает дату из базы
@@ -959,11 +963,11 @@ def car_butt():
                                      text_color="black")
             if not car_entry.get():
                 querry2 = f"SELECT * FROM carsharing WHERE car_class = '{classes_dict[dropdown.get()]}'"
-                mydb = mysql.connector.connect(
-                    host="localhost",
-                    user="root",
-                    password="09070500",
-                    database="travelDB")
+                mydb = mydb = mysql.connector.connect(
+        host=os.environ.get("DB_HOST"),
+        user=os.environ.get("DB_USER"),
+        password=os.environ.get("DB_PASSWORD"),
+        database="travelDB")
                 mycursor = mydb.cursor()
 
                 # выбирает дату из базы

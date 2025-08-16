@@ -2,7 +2,7 @@
 /shelf/
 /workspace.xml
 .idea/
-
+**/.env
 # User-specific files
 *.xml
 *.iml
