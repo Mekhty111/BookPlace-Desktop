@@ -77,7 +77,12 @@ text
 
 python MainApp.py
 
-text
+---
+## 📸 Demo Screenshots
+
+![Flight Page](demo_screen/Demo_hotel_found.jpg)
+![Hotel Page](demo_screen/Demo_hotel_3.jpg)
+![CarSharing Page](demo_screen/Demo_car_found.jpg)
 
 ---
 
