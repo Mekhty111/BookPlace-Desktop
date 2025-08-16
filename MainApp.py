@@ -1,18 +1,25 @@
+# This is the main application file for a travel booking app
+
+#Tkinter, customtkinter, and other necessary libraries
 import tkinter as tk
 from tkinter import ttk
-import mysql.connector
-from PIL import Image, ImageTk   
 from tkcalendar import Calendar
 import customtkinter as ct
-import random
-from PIL import ImageFont
-from datetime import datetime
+# OS, random, and datetime for various functionalities
 import os
+import random
+from datetime import datetime
+# Pillow for image handling
+from PIL import Image, ImageTk, ImageFont
+
+# MySQL Connector
+import mysql.connector
 
 # Load environment variables from .env file
 from dotenv import load_dotenv
 load_dotenv()
 
+# ----------------------------------------------
 countries_dict = {
     'Baku': 'Баку',
     'Moscow': 'Москва',
