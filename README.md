@@ -1,4 +1,4 @@
-# 🛫 MyBookingProject-Clone-Aviasales
+# 🛫 BookPlace-Desktop ( AviaSales.ru )
 
 ---
 
@@ -27,28 +27,37 @@
 ---
 ## 📂 Project Structure
 ```
-├── MainApp.py # Main application source code
-├── Untitled.sql # SQL schema/dump for MySQL database
-├── apartments.csv # Apartment rental data source
-├── aviatickets.csv # Flights data source
-├── carsharing.csv # Car rental data source
-├── hotels.csv # Hotels data source
-├── Calendar_icons/ # Calendar-related icons/images
-├── Cars/ # Car images/assets
-├── Fonts/ # Custom fonts used in the app
-├── Hotels_pics/ # Hotel images
-├── bakcground_img/ # Background images
-├── icons/ # General app icons
-├── .idea/ # IDE/project config files
-└── .DS_Store # macOS system file
+├── MainApp.py                  # Main application source code
+├── README.md                   # Project description
+├── .gitignore                  # Git ignore rules
+├── requirements                # Requirements file or folder (specify if it's requirements.txt)
+├── Calendar_icons/             # Calendar-related icons and images
+│   └── ...                     # (icon files inside)
+├── Cars/                       # Car-related images and assets
+│   └── ...                     # (image files inside)
+├── Fonts/                      # Fonts used in the app
+│   └── ...                     # (font files inside)
+├── Hotels_pics/                # Hotel images
+│   └── ...                     # (image files inside)
+├── bakground_img/              # Background images
+│   └── ...                     # (background image files inside)
+├── icons/                      # General application icons
+│   └── ...                     # (icon files inside)
+├── data/                       # All project data files
+│   ├── apartments.csv          # Apartment rental data
+│   ├── aviatickets.csv         # Flight tickets data
+│   ├── carsharing.csv          # Car sharing data
+│   └── hotels.csv              # Hotels data
+
+
 ```
 ---
 ## 🚀 Installation & Setup
 
 1. **Clone the repository:**
 
-git clone https://github.com/Mekhty111/MyBookingProject-Clone-Aviasales-.git
-cd MyBookingProject-Clone-Aviasales-
+git clone https://github.com/Mekhty111/BookPlace-Desktop.git
+cd BookPlace-Desktop
 
 text
 
