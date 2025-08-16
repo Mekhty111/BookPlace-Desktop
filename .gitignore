@@ -5,5 +5,8 @@
 
 # User-specific files
 *.xml
+*.iml
+*.ipr
+*.iws
 .DS_Store
 **/.DS_Store
