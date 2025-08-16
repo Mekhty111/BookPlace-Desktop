@@ -1,4 +1,4 @@
-# 🛫 MyBookingProject-Clone-Aviasales
+# 🛫 BookPlace-Desktop ( AviaSales.ru )
 
 ---
 
@@ -56,8 +56,8 @@
 
 1. **Clone the repository:**
 
-git clone https://github.com/Mekhty111/MyBookingProject-Clone-Aviasales-.git
-cd MyBookingProject-Clone-Aviasales-
+git clone https://github.com/Mekhty111/BookPlace-Desktop.git
+cd BookPlace-Desktop
 
 text
 
