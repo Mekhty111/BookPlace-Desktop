@@ -27,21 +27,28 @@
 ---
 ## 📂 Project Structure
 ```
-├── MainApp.py            # Main application source code
-├── apartments.csv        # Apartment rental data source
-├── aviatickets.csv       # Flights data source
-├── carsharing.csv        # Car rental data source
-├── hotels.csv            # Hotels data source
-├── Calendar_icons/       # Calendar-related icons/images
-├── Cars/                 # Car images/assets
-├── Fonts/                # Custom fonts used in the app
-├── Hotels_pics/          # Hotel images
-├── bakground_img/        # Background images
-├── data/                 # Data folder (added/updated)
-├── icons/                # General app icons
-├── requirements          # Added requirements (новый файл/папка)
-├── .gitignore            # Updated .gitignore
-├── README.md             # Updated README
+├── MainApp.py                  # Main application source code
+├── README.md                   # Project description
+├── .gitignore                  # Git ignore rules
+├── requirements                # Requirements file or folder (specify if it's requirements.txt)
+├── Calendar_icons/             # Calendar-related icons and images
+│   └── ...                     # (icon files inside)
+├── Cars/                       # Car-related images and assets
+│   └── ...                     # (image files inside)
+├── Fonts/                      # Fonts used in the app
+│   └── ...                     # (font files inside)
+├── Hotels_pics/                # Hotel images
+│   └── ...                     # (image files inside)
+├── bakground_img/              # Background images
+│   └── ...                     # (background image files inside)
+├── icons/                      # General application icons
+│   └── ...                     # (icon files inside)
+├── data/                       # All project data files
+│   ├── apartments.csv          # Apartment rental data
+│   ├── aviatickets.csv         # Flight tickets data
+│   ├── carsharing.csv          # Car sharing data
+│   └── hotels.csv              # Hotels data
+
 
 ```
 ---
