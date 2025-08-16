@@ -4,5 +4,6 @@
 .idea/
 
 # User-specific files
+*.xml
 .DS_Store
 **/.DS_Store
