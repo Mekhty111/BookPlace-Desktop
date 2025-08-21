@@ -1,4 +1,11 @@
-# 🛫 BookPlace-Desktop ( AviaSales.ru )
+# 🛫 BookPlace-Desktop (AviaSales.ru)
+
+
+
+![Hotel Page](demo_screen/Demo_hotel_3.jpg)
+![CarSharing Page](demo_screen/Demo_car_found.jpg)
+![Flight Page](demo_screen/Demo_hotel_found.jpg)
+
 
 ---
 
@@ -76,13 +83,6 @@ text
 4. **Run the application:**
 
 python MainApp.py
-
----
-## 📸 Demo Screenshots
-
-![Flight Page](demo_screen/Demo_hotel_found.jpg)
-![Hotel Page](demo_screen/Demo_hotel_3.jpg)
-![CarSharing Page](demo_screen/Demo_car_found.jpg)
 
 ---
 
